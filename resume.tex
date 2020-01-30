@@ -4,7 +4,8 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \setlength{\textwidth}{7.4in} % set width of text portion
-\addtolength{\oddsidemargin}{-0.85in}
+\addtolength{\oddsidemargin}{-0.9in}
+% \addtolength{\oddsidemargin}{-0.85in}
 \addtolength{\topmargin}{-0.9in}
 \addtolength{\textheight}{1.75in}
 \addtolength{\sectionwidth}{-0.2in}
@@ -17,12 +18,12 @@
 
 
 % Center the name over the entire width of resume:
-\moveleft.5\hoffset\centerline{\Large\bf Cody Morterud}
+\centerline{\Large\bf Cody Morterud}
 % Draw a horizontal line the whole width of resume:
- \moveleft.5\hoffset\vbox{\hrule width 0.9\paperwidth height 1pt}\smallskip
+\vbox{\hrule width 1\textwidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
-\moveleft.5\hoffset\centerline{ 
+\centerline{ 
     codymorterud@gmail.com 
     $\cdot$ \href{http://www.codymorterud.com}{www.codymorterud.com} $\cdot$ (248) 481-0355
     $\cdot$ 784 Hidden Creek Drive
@@ -34,26 +35,22 @@
 \hfill April 2019\\ 
                  {\sl Bachelor of Science in Engineering,} Computer Science,
                  {\sl With Honors, Magna Cum Laude}\hfill 3.50/4.00 GPA
-                \\ {\sl Minor in Mathematics}
+                % \\ {\sl Minor in Mathematics}
 
 \section{EXPERIENCE}
 \textbf{Capital One, Chicago, IL} \hfill August 2019 - Current \\
 {\sl Associate Software Engineer}
 \begin{itemize}  \itemsep -2pt %reduce space between items
 
-    \item Decreased service latency by refactoring external
-    API calls into separate threads and validating changes
-    through performance testing.
+    \item Decreased service latency 20\% by multithreading external
+    API calls and validated changes with performance testing.
 
-    \item Ensured production deployment stability by implementing, 
-    and designing acceptance tests with Cucumber.
+    \item Ensured production deployment stability by designing 
+    and implementing acceptance tests with Cucumber.
 
-    \item Deployed new applications to AWS by
-    understanding and configuring in-house deployment software.
+    \item Deployed applications to AWS by
+    writing and programmatically configuring build stages within {\it Jenkinsfile}s. 
     
-    \item Designed complete suites of custom alerts through Kibana
-    for production incidents for multiple services.
-
     \item Wrote documentation for services owned by team
     to help onboard feature teams to our applications.
 
@@ -62,6 +59,12 @@
 
     \item Presented application design improvements to department scrum
     meetings.
+
+    \item Demonstrated platform ownership by independently conducting production
+    deployments for critical path applications.
+
+    \item Designed complete suites of custom alerts through Kibana
+    for production incidents for multiple services.
 
 \end{itemize}
 
@@ -125,26 +128,26 @@
     and libraries into project.
     
     \item Maximized performance by using 
-    Standard Template Library containers and algorithms,
-    and tracked changes via version control systems.
+    Standard Template Library containers and algorithms.
+    % and tracked changes via version control systems.
 
-    \item Ensured accurate implementation and results by working closely
-     with benefactors and stakeholders.
+    % \item Ensured accurate implementation and results by working closely
+    %  with benefactors and stakeholders.
 \end{itemize}
 
-\section{PROJECT EXPERIENCE}
+\section{PROJECTS}
 
 \begin{itemize}[label={}]  \itemsep -2pt %reduce space between items
     \item \textbf{C\texttt{++}, Make, GDB:}
         Implemented, tested, debugged, and monitored multi-threaded internet crawler
         for search engine build side to retrieve and save 3.5 million HTML documents
         at approximately 39,000 documents per hour on a 25 Mbps connection,
-        prioritizing frontier of links, managing set of seen pages, caching Robots.txt files.
+        prioritizing frontier of links, managing set of seen pages, parsing and caching Robots.txt files.
     \item \textbf{C\texttt{\#} .NET, WPF:}
-        Designed open source message encryption interface using
+        Designed open source message encryption user interface using
         Windows Presentation Forms to allow non-technical users
-        to encrypt and decrypt with AES-128 and AES-256 in CBC mode
-        according to NIST standards.
+        to encrypt and decrypt with AES-128 and AES-256 in CBC mode.
+        % according to NIST standards
     \item \textbf{Python, Flask, React, SQLite:}
         Implemented Instagram clone with basic functionality 
         to gain familiarity with the Flask and React frameworks, 
@@ -178,14 +181,14 @@
 
 \section{COMPUTER SKILLS}
 \bigskip
-\begin{parcolumns}[rulebetween,colwidths={5=2cm,1=2cm}]{6}
-    \colchunk[1]{\textbf{Languages}\\Java\\C/C\texttt{++}\\Python\\C\texttt{\#} .NET\\\LaTeX}
-    \colchunk[2]{\textbf{IDE}\\IntelliJ\\Visual Studio}
-    \colchunk[3]{\textbf{Technologies}\\Git\\Bash\\Kibana\\Grafana}
-    \colchunk[4]{\\Flask\\Perf\\MapReduce\\Postman}
+\begin{parcolumns}[rulebetween,colwidths={}]{6}
+    \colchunk[1]{\textbf{Languages}\\Java\\C/C\texttt{++}\\JavaScript\\C\texttt{\#} .NET\\Python\\\LaTeX}
+    \colchunk[2]{\textbf{IDE}\\IntelliJ\\Visual Studio\\VIM}
+    \colchunk[3]{\textbf{Technologies}\\Git\\Bash\\Jenkins\\Kibana\\Grafana}
+    \colchunk[4]{\\Postman\\Cucumber\\Perf\\MapReduce\\Flask}
     \colchunk[5]{\\WPF\\GDB\\Valgrind\\Make\\PyTorch}
     \colchunk[5]{\textbf{Java}\\Spring\\Maven\\Mockito}
-    \colchunk[6]{\textbf{AWS}\\CloudWatch\\Lambda\\ECS\\RDS}
+    \colchunk[6]{\textbf{AWS}\\CloudWatch\\Lambda\\ECS\\RDS\\ALB}
 \end{parcolumns}
 
 \end{resume}
