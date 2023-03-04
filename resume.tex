@@ -42,7 +42,19 @@
 
 \section{EXPERIENCE}
 \textbf{Microsoft}  \\
-{\sl Software Engineer} \hfill August 2021 - Current
+{\sl Software Engineer II} \hfill April 2022 - Current
+\begin{itemize}  \itemsep -2pt % reduce space between items
+    \item Developed features in C\texttt{\#} .NET in stateful microservices built on Service Fabric.
+    \item Designed and built network protocol setup feature to enable connectivity across machines on demand.
+    \item Used transactions to ensure consistency of state while service is receiving continuous and concurrent requests.
+    \item Partnered with consumers of service APIs to integration test and resolve issues timely.
+    \item Set up Service Fabric clusters via Powershell scripting to enable automated and manual integration testing.
+    \item Enabled end to end automated testing of pull requests by building integration testing environment in pipeline.
+    \item Identified, debugged, and resolved race conditions.
+    \item Planned and tracked development work on Azure DevOps boards.
+\end{itemize}
+
+{\sl Software Engineer II} \hfill August 2021 - April 2022
 \begin{itemize}  \itemsep -2pt % reduce space between items
     \item Developed high performance packet switching discrete event simulation framework in C\texttt{++}.
     \item Simulated algorithms, topologies, and workloads of interest according to requirements.
@@ -54,7 +66,7 @@
     \item Researched discrete event simulation techniques in academic literature and relevant networking topics.
     \item Optimized program runtime by identifying program hotspots using {\it perf} Linux utility.
     \item Performed regression testing with suite of {\it Catch2} tests
-    \item Planned and tracked development work on Azure DevOps boards.
+    % \item Planned and tracked development work on Azure DevOps boards.
 \end{itemize}
 
 
@@ -62,7 +74,7 @@
 {\sl Senior Associate Software Engineer} \hfill February 2021 - August 2021 \\
 {\sl Associate Software Engineer} \hfill August 2019 - February 2021
 \begin{itemize}  \itemsep -2pt % reduce space between items
-    \item Complete responsibility for multiple ECS Java Spring Boot business critical REST API microservices in AWS.
+    \item Responsibility for multiple ECS Java Spring Boot critical path REST API microservices in AWS.
     \item Moderated Java Spring Boot microservice feature contributions to ensure clean code and object oriented principles.  %ensuring production stability and timely feature delivery. %to ensure production stability and feature delivery on-time.
     \item Validated and conducted production releases in AWS for stakeholders independently and safely with no downtime.
     \item Guided technical debt reduction intent through continuous identification and scrum story creation.
@@ -71,18 +83,18 @@
     \item Promoted CICD by building reproducible testing environment with Docker compose and integrating with pipeline.
     \item Conduct production support and contribute hotfixes when necessary.
     \item Inner sourced microservice platform, insituting code quality standards, documentation, and requirements for features.
-    \item Planned, documented, performed, and validated critical production traffic failover for technical recovery exercise. 
+    % \item Planned, documented, performed, and validated critical production traffic failover for technical recovery exercise. 
     \item Decreased service latency 20\% by multithreading external
     API calls and validated changes with performance testing.
-    \item Promoted software engineering practices by presenting and teaching common design patterns within the ART. 
-    \item Ensured production deployment validation by designing 
-    and implementing acceptance tests with Cucumber.
-    \item Deployed applications to AWS by
-    writing and programmatically configuring build stages within {\it Jenkinsfile}s.
+    % \item Promoted software engineering practices by presenting and teaching common design patterns within the ART. 
+    % \item Ensured production deployment validation by designing 
+    % and implementing acceptance tests with Cucumber.
+    % \item Deployed applications to AWS by
+    % writing and programmatically configuring build stages within {\it Jenkinsfile}s.
     % \item Wrote documentation for services owned by team to onboard feature teams to our applications.
-    \item Advocated, presented, and implemented application design improvements to department scrum meetings.
+    % \item Advocated, presented, and implemented application design improvements to department scrum meetings.
     % \item Designed and installed roles of least privilege in PostgreSQL databases.
-    \item Removed attack vectors via consistent dependency updates, cybersecurity vulnerability scanning, and testing.
+    % \item Removed attack vectors via consistent dependency updates, cybersecurity vulnerability scanning, and testing.
     % \item Designed comprehensive suites of custom alerts through Kibana
     % for production incidents for multiple services.
 \end{itemize}
@@ -162,18 +174,18 @@
     \item \textbf{C\texttt{++}, CMake, Zookeeper, gRPC, Azure}
         Developed and tested scalable, parallel MapReduce framework implementation in C\texttt{++}
         serving jobs in Azure on infrastructure built with Azure Resource Manager templates.
+    \item \textbf{Python, Ryu Controller, Open vSwitch}
+        Implemented software defined networking controller to manage bandwidth on a topology, installing flows
+        in switches to ensure maximum bandwidth between pairs of hosts in near realtime.
+    % \item \textbf{Python, Ryu Controller, Open vSwitch}
+    %     Built virtualized network function manager to allow scaling of virtual network functions and 
+    %     user defined routing between endhosts, handling arbitrary routing on a two switch topology.
     % \item \textbf{C, Make, GDB:}
     %     Developed virtual CPU and memory resource coordinator to manage
     %     virtual resources for guest operating systems running on top of a hypervisor,
     %     integrating with \textit{libvirt} APIs.
     % \item \textbf{C\texttt{++}, Make, GDB:}
     %     Developed MapReduce implementation to scalably perform MapReduce jobs in a multithreaded, distributed manner.
-    \item \textbf{Python, Ryu Controller, Open vSwitch}
-        Implemented software defined networking controller to manage bandwidth on a topology, installing flows
-        in switches to ensure maximum bandwidth between pairs of hosts in near realtime.
-    \item \textbf{Python, Ryu Controller, Open vSwitch}
-        Built virtualized network function manager to allow scaling of virtual network functions and 
-        user defined routing between endhosts, handling arbitrary routing on a two switch topology.
     % \item \textbf{C, Make, GDB:}
     %     Constructed several implementations of popular barrier synchronization
     %     algorithms in OpenMP and MPI; tested across separate nodes and threads to identify
@@ -217,11 +229,11 @@
 \section{COMPUTER SKILLS}
 \bigskip
 \begin{parcolumns}[rulebetween,distance=2em,nofirstindent=true,colwidths={3=4.5cm}]{5}
-    \colchunk[1]{\textbf{Languages}\\C/C\texttt{++}\\Python\\Java\\JavaScript\\\LaTeX}
+    \colchunk[1]{\textbf{Languages}\\C/C\texttt{++}\\C\texttt{\#}\\Python\\Java\\\LaTeX}
     % \colchunk[2]{\textbf{IDE}\\IntelliJ\\Visual Studio\\VIM}
-    \colchunk[2]{\textbf{Technologies}\\Git\\Bash\\Splunk\\Kibana\\Docker\\GDB}%\\Valgrind}
-    \colchunk[3]{\textbf{Concepts}\\Multithreading\\Object Oriented Programming\\Linux Administration\\Networking Protocols\\Functional Testing\\Scrum}
-    \colchunk[4]{\textbf{Java}\\Spring Boot\\Maven\\Mockito\\Mockserver\\Testcontainers}
+    \colchunk[2]{\textbf{Technologies}\\Git\\Powershell\\Bash\\Splunk\\Docker\\GDB}%\\Valgrind}
+    \colchunk[3]{\textbf{Concepts}\\Transactions\\Multithreading\\Object Oriented Programming\\Linux Administration\\Networking Protocols\\CICD}
+    \colchunk[4]{\textbf{C\texttt{\#}}\\ASP.NET\\msbuild\\Moq}
     \colchunk[5]{\textbf{AWS CSAA}\\EC2\\ECS\\RDS\\ALB\\CloudWatch\\Lambda}
 \end{parcolumns}
 
